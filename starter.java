@@ -11,7 +11,7 @@ class starter {
             = new JFrame(); // creating instance of JFrame
  
         JButton button = new JButton(
-            " GFG WebSite Click"); // creating instance of
+            " "); // creating instance of
                                    // JButton
         button.setBounds(
             100, 100, 50,
@@ -41,6 +41,27 @@ class starter {
             " ");
 
             button3.setBounds(100,150,50,50);
+
+            JButton button4 = new JButton(" ");
+
+            button4.setBounds(100,200,50,50);
+
+            JButton button5 = new JButton(" ");
+
+            button5.setBounds(150,200,50,50);
+
+            JButton button6 = new JButton(" ");
+
+            button6.setBounds(150,150,50,50);
+
+
+            JButton button7 = new JButton(" ");
+
+            button7.setBounds(200,200,50,50);
+
+            JButton button8 = new JButton(" ");
+
+            button8.setBounds(200,150,50,50);
  
         frame.add(button); // adding button in JFrame
         frame.add(button1);
