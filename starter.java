@@ -6,12 +6,20 @@ import java.time.format.TextStyle;
 import java.util.ArrayList;
 
 // Main class
-class Starter {
-
+class starter {
     // Main driver method
     public static void main(String[] args) {
         JFrame frame = new JFrame(); // creating instance of JFrame
         JPanel panel = new JPanel();
+        JPanel b = new JPanel();
+        JPanel b1 = new JPanel();
+        JPanel b2 = new JPanel();
+        JPanel b3 = new JPanel();
+        JPanel b4 = new JPanel();
+        JPanel b5 = new JPanel();
+        JPanel b6 = new JPanel();
+        JPanel b7 = new JPanel();
+        JPanel b8 = new JPanel();
         panel.setBackground(Color.gray);
         panel.setBounds(350, 100, 150, 150);
         panel.setSize(150, 150);
@@ -104,16 +112,114 @@ class Starter {
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                Graphics g = button.getGraphics();
-                g.drawLine(0, 0, 500, 500);
-                /*
-                JPanel b = new JPanel();
+        button.setVisible(false);
+                frame.remove(button);
                 b.setBackground(Color.gray);
-                b.setBounds(50, 100, 500, 50);
+                b.setBounds(100, 100, 50, 50);
                 b.setSize(50,50);
                 frame.add(b);
-                System.out.print("mrpooleseemmed");
-                 */
+                for(int i = 0;i<player1.size()-3;i++){
+                    if (drawing.size() % 4 == 0 && drawing.size() != 0){
+                Graphics g = b.getGraphics();
+                g.drawLine(player1.get(i), player1.get(i+1), player1.get(i+2), player1.get(i+3));
+                }
+    
+            }                 
+            }
+            });
+            button1.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button1.setVisible(false);
+                frame.remove(button1);
+                b1.setBackground(Color.gray);
+                b1.setBounds(150, 100, 50, 50);
+                b1.setSize(50,50);
+                frame.add(b1);
+            }
+            });
+            button2.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button2.setVisible(false);
+                frame.remove(button2);
+                b2.setBackground(Color.gray);
+                b2.setBounds(200, 100, 50, 50);
+                b2.setSize(50,50);
+                frame.add(b2);
+                 
+            }
+            });
+            button3.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button3.setVisible(false);
+                frame.remove(button3);
+                b3.setBackground(Color.gray);
+                b3.setBounds(100, 150, 50, 50);
+                b3.setSize(50,50);
+                frame.add(b3);
+                 
+            }
+            });
+            button4.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button4.setVisible(false);
+                frame.remove(button4);
+                b4.setBackground(Color.gray);
+                b4.setBounds(100, 200, 50, 50);
+                b4.setSize(50,50);
+                frame.add(b4);
+                 
+            }
+            });
+            button5.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button5.setVisible(false);
+                frame.remove(button5);
+                b5.setBackground(Color.gray);
+                b5.setBounds(150, 200, 50, 50);
+                b5.setSize(50,50);
+                frame.add(b5);
+                 
+            }
+            });
+            button6.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button6.setVisible(false);
+                frame.remove(button6);
+                b6.setBackground(Color.gray);
+                b6.setBounds(150, 150, 50, 50);
+                b6.setSize(50,50);
+                frame.add(b6);
+                 
+            }
+            });
+            button7.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button7.setVisible(false);
+                frame.remove(button7);
+                b7.setBackground(Color.gray);
+                b7.setBounds(200, 200, 50, 50);
+                b7.setSize(50,50);
+                frame.add(b7);
+                 
+            }
+            });
+            button8.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                button8.setVisible(false);
+                frame.remove(button8);
+                b8.setBackground(Color.gray);
+                b8.setBounds(200, 150, 50, 50);
+                b8.setSize(50,50);
+                frame.add(b8);
+                 
             }
             });
         panel.addMouseListener(new MouseListener() {
